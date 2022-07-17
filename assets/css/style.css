@@ -1,0 +1,63 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-image: linear-gradient(blue, aqua);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.head-box {
+    background-color: gray;
+    border-radius: 15px;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 60%;
+}
+
+.up-top {
+    margin-top: 2rem;
+}
+
+.topText {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+
+.search-box {
+    background-color: orange;
+}
+
+.find-out-btn {
+    background-color: aqua;
+    padding: 5px;
+}
+
+.main-weather {
+    border-radius: 7px;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    padding: 2.5rem;
+    background: white;
+}
+
+.recently-searched {
+    border-radius: 7px;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    padding: 2.5rem;
+    background: white;
+}
+
+.five-forcast {
+    margin-top: 1.5rem;
+}
+
+.card {
+    margin-top: 1rem;
+}
