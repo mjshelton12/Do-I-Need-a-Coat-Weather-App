@@ -36,7 +36,7 @@ body {
 }
 
 .topText {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Slab', serif;
     margin: 10px;
 }
 
@@ -49,6 +49,14 @@ body {
     padding: 5px;
     border-radius: 7px;
     box-shadow: inset  0px 0px 10px rgb(128, 128, 128);
+}
+
+.title-font {
+    font-family: 'Roboto Slab', serif;
+}
+
+.card-subtitle {
+    font-family: 'Edu TAS Beginner', cursive;
 }
 
 .main-weather {
