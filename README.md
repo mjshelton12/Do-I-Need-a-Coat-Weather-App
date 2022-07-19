@@ -10,7 +10,7 @@
 
 ## Live Site
 
-[Live Scheduler](https://mjshelton12.github.io/Do-I-Need-a-Coat-Weather-App/)
+[Live Application](https://mjshelton12.github.io/Do-I-Need-a-Coat-Weather-App/)
 
 ## Overview of Site
 

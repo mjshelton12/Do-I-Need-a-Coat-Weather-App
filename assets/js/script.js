@@ -6,7 +6,7 @@ var futureUrlOne = "api.openweathermap.org/data/2.5/forecast?lat="
 var futureUrlTwo = "&lon="
 var futureUrlThree = "&appid=def401b47cf00146af8b234c0c6d2895"
 
-var cityUrl = "http://api.openweathermap.org/geo/1.0/direct?limit=5&appid=def401b47cf00146af8b234c0c6d2895&q="
+var cityUrl = "https://api.openweathermap.org/geo/1.0/direct?limit=5&appid=def401b47cf00146af8b234c0c6d2895&q="
 
 var currentDate = moment().format('M/D/YY')
 
@@ -54,7 +54,7 @@ function newYorkCity() {
             mainWind.textContent = "Wind: " + data.current.wind_speed
             mainHumidity.textContent = "Humidity: " + data.current.humidity
             mainUV.textContent = data.current.uvi
-            icon.src = "http://openweathermap.org/img/wn/" + data.current.weather[0].icon + "@2x.png"
+            icon.src = "https://openweathermap.org/img/wn/" + data.current.weather[0].icon + "@2x.png"
             descript.textContent = data.current.weather[0].main
 
             if (data.current.temp >+ 70) {
@@ -118,7 +118,7 @@ function newYorkCity() {
             }
 
             if(data.current.weather.main === "clear") {
-                icon.src = "http://openweathermap.org/img/wn/01d@2x.png"
+                icon.src = "https://openweathermap.org/img/wn/01d@2x.png"
             }
 
             //Card One
@@ -128,7 +128,7 @@ function newYorkCity() {
             var oneWind = document.getElementById("card-1-wind")
             var oneHumidity = document.getElementById("card-1-humidity")
 
-            oneIcon.src = "http://openweathermap.org/img/wn/" + data.daily[0].weather[0].icon + "@2x.png"
+            oneIcon.src = "https://openweathermap.org/img/wn/" + data.daily[0].weather[0].icon + "@2x.png"
             oneTemp.textContent = "Temp: " + data.daily[0].temp.day
             oneWind.textContent = "Wind: " + data.daily[0].wind_speed
             oneHumidity.textContent = "Humidity: " + data.daily[0].humidity
@@ -141,7 +141,7 @@ function newYorkCity() {
             var twoWind = document.getElementById("card-2-wind")
             var twoHumidity = document.getElementById("card-2-humidity")
 
-            twoIcon.src = "http://openweathermap.org/img/wn/" + data.daily[1].weather[0].icon + "@2x.png"
+            twoIcon.src = "https://openweathermap.org/img/wn/" + data.daily[1].weather[0].icon + "@2x.png"
             twoTemp.textContent = "Temp: " + data.daily[1].temp.day
             twoWind.textContent = "Wind: " + data.daily[1].wind_speed
             twoHumidity.textContent = "Humidity: " + data.daily[1].humidity
@@ -153,7 +153,7 @@ function newYorkCity() {
             var threeWind = document.getElementById("card-3-wind")
             var threeHumidity = document.getElementById("card-3-humidity")
 
-            threeIcon.src = "http://openweathermap.org/img/wn/" + data.daily[2].weather[0].icon + "@2x.png"
+            threeIcon.src = "https://openweathermap.org/img/wn/" + data.daily[2].weather[0].icon + "@2x.png"
             threeTemp.textContent = "Temp: " + data.daily[2].temp.day
             threeWind.textContent = "Wind: " + data.daily[2].wind_speed
             threeHumidity.textContent = "Humidity: " + data.daily[2].humidity
@@ -165,7 +165,7 @@ function newYorkCity() {
             var fourWind = document.getElementById("card-4-wind")
             var fourHumidity = document.getElementById("card-4-humidity")
 
-            fourIcon.src = "http://openweathermap.org/img/wn/" + data.daily[3].weather[0].icon + "@2x.png"
+            fourIcon.src = "https://openweathermap.org/img/wn/" + data.daily[3].weather[0].icon + "@2x.png"
             fourTemp.textContent = "Temp: " + data.daily[3].temp.day
             fourWind.textContent = "Wind: " + data.daily[3].wind_speed
             fourHumidity.textContent = "Humidity: " + data.daily[3].humidity
@@ -177,7 +177,7 @@ function newYorkCity() {
             var fiveWind = document.getElementById("card-5-wind")
             var fiveHumidity = document.getElementById("card-5-humidity")
 
-            fiveIcon.src = "http://openweathermap.org/img/wn/" + data.daily[4].weather[0].icon + "@2x.png"
+            fiveIcon.src = "https://openweathermap.org/img/wn/" + data.daily[4].weather[0].icon + "@2x.png"
             fiveTemp.textContent = "Temp: " + data.daily[4].temp.day
             fiveWind.textContent = "Wind: " + data.daily[4].wind_speed
             fiveHumidity.textContent = "Humidity: " + data.daily[4].humidity
@@ -239,7 +239,7 @@ function pullWeatherData(x, y) {
             mainWind.textContent = "Wind: " + data.current.wind_speed
             mainHumidity.textContent = "Humidity: " + data.current.humidity
             mainUV.textContent = data.current.uvi
-            icon.src = "http://openweathermap.org/img/wn/" + data.current.weather[0].icon + "@2x.png"
+            icon.src = "https://openweathermap.org/img/wn/" + data.current.weather[0].icon + "@2x.png"
             descript.textContent = data.current.weather[0].main
 
             if (data.current.temp >+ 70) {
@@ -313,7 +313,7 @@ function pullWeatherData(x, y) {
             var oneWind = document.getElementById("card-1-wind")
             var oneHumidity = document.getElementById("card-1-humidity")
 
-            oneIcon.src = "http://openweathermap.org/img/wn/" + data.daily[0].weather[0].icon + "@2x.png"
+            oneIcon.src = "https://openweathermap.org/img/wn/" + data.daily[0].weather[0].icon + "@2x.png"
             oneTemp.textContent = "Temp: " + data.daily[0].temp.day
             oneWind.textContent = "Wind: " + data.daily[0].wind_speed
             oneHumidity.textContent = "Humidity: " + data.daily[0].humidity
@@ -326,7 +326,7 @@ function pullWeatherData(x, y) {
             var twoWind = document.getElementById("card-2-wind")
             var twoHumidity = document.getElementById("card-2-humidity")
 
-            twoIcon.src = "http://openweathermap.org/img/wn/" + data.daily[1].weather[0].icon + "@2x.png"
+            twoIcon.src = "https://openweathermap.org/img/wn/" + data.daily[1].weather[0].icon + "@2x.png"
             twoTemp.textContent = "Temp: " + data.daily[1].temp.day
             twoWind.textContent = "Wind: " + data.daily[1].wind_speed
             twoHumidity.textContent = "Humidity: " + data.daily[1].humidity
@@ -338,7 +338,7 @@ function pullWeatherData(x, y) {
             var threeWind = document.getElementById("card-3-wind")
             var threeHumidity = document.getElementById("card-3-humidity")
 
-            threeIcon.src = "http://openweathermap.org/img/wn/" + data.daily[2].weather[0].icon + "@2x.png"
+            threeIcon.src = "https://openweathermap.org/img/wn/" + data.daily[2].weather[0].icon + "@2x.png"
             threeTemp.textContent = "Temp: " + data.daily[2].temp.day
             threeWind.textContent = "Wind: " + data.daily[2].wind_speed
             threeHumidity.textContent = "Humidity: " + data.daily[2].humidity
@@ -350,7 +350,7 @@ function pullWeatherData(x, y) {
             var fourWind = document.getElementById("card-4-wind")
             var fourHumidity = document.getElementById("card-4-humidity")
 
-            fourIcon.src = "http://openweathermap.org/img/wn/" + data.daily[3].weather[0].icon + "@2x.png"
+            fourIcon.src = "https://openweathermap.org/img/wn/" + data.daily[3].weather[0].icon + "@2x.png"
             fourTemp.textContent = "Temp: " + data.daily[3].temp.day
             fourWind.textContent = "Wind: " + data.daily[3].wind_speed
             fourHumidity.textContent = "Humidity: " + data.daily[3].humidity
@@ -362,7 +362,7 @@ function pullWeatherData(x, y) {
             var fiveWind = document.getElementById("card-5-wind")
             var fiveHumidity = document.getElementById("card-5-humidity")
 
-            fiveIcon.src = "http://openweathermap.org/img/wn/" + data.daily[4].weather[0].icon + "@2x.png"
+            fiveIcon.src = "https://openweathermap.org/img/wn/" + data.daily[4].weather[0].icon + "@2x.png"
             fiveTemp.textContent = "Temp: " + data.daily[4].temp.day
             fiveWind.textContent = "Wind: " + data.daily[4].wind_speed
             fiveHumidity.textContent = "Humidity: " + data.daily[4].humidity
@@ -402,7 +402,6 @@ findOutBtn.addEventListener('click', function(event){
     var city = document.getElementById("location").value
 
     if (city === ""){
-        console.log("No City :(")
         return false;
     } else {
         addToSearchList()
