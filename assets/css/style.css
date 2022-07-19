@@ -1,3 +1,10 @@
+
+:root {
+    --backshadow: 000000;
+    --whiteshadow: #696969;
+}
+
+
 html {
     height: 100%;
 }
@@ -13,11 +20,15 @@ body {
 }
 
 .head-box {
-    background-color: gray;
+    background-color: rgb(188, 188, 191);
     border-radius: 15px;
     padding: 1rem;
     margin-top: 1rem;
     width: 60%;
+    box-shadow: 
+        0px 0px 30px var(--backshadow),
+        inset  0px 0px 15px #303030;
+        
 }
 
 .up-top {
@@ -33,9 +44,11 @@ body {
     background-color: orange;
 }
 
-.find-out-btn {
+#find-out-btn {
     background-color: aqua;
     padding: 5px;
+    border-radius: 7px;
+    box-shadow: inset  0px 0px 10px rgb(128, 128, 128);
 }
 
 .main-weather {
@@ -44,6 +57,61 @@ body {
     margin-left: 1rem;
     padding: 2.5rem;
     background: white;
+    box-shadow: 
+        0px 0px 30px var(--backshadow),
+        inset  0px 0px 15px var(--whiteshadow);
+}
+
+.temp-wind-hum {
+    width: 37rem;
+    margin-left: 1rem;
+}
+
+#main-temp {
+    margin-top: .75rem;
+}
+#main-humidity {
+    margin-bottom: 1rem;
+}
+
+.icon-and-description {
+    justify-content: right;
+    text-align: center;
+    background-color: #b9b9b9;
+    border-radius: 7px;
+}
+
+#main-UV {
+    width: 5rem;
+    margin-left: 1rem;
+}
+
+#uv-box {
+    width: 3rem;
+    height: 2rem;
+    padding: 5px;
+    border-radius: 7px;
+    box-shadow: inset  0px 0px 7px rgb(128, 128, 128); 
+}
+
+.low-uv {
+    background-color: rgb(139, 216, 139);
+}
+
+.moderate-uv {
+    background-color: rgb(240, 251, 90);
+}
+
+.high-uv {
+    background-color: rgb(255, 204, 0);
+}
+
+.very-high-uv {
+    background-color: rgb(255, 0, 0);
+}
+
+.extreme-uv {
+    background-color: rgb(198, 55, 255);
 }
 
 .recently-searched {
@@ -52,12 +120,26 @@ body {
     margin-right: 1rem;
     padding: 2.5rem;
     background: white;
+    box-shadow: 
+        0px 0px 30px var(--backshadow),
+        inset  0px 0px 15px var(--whiteshadow);
+}
+
+#searched-list {
+    list-style: none;
 }
 
 .five-forcast {
     margin-top: 1.5rem;
+    text-shadow: 0px 0px 20px #ffffffc6;
 }
 
 .card {
     margin-top: 1rem;
+    box-shadow: 
+        0px 0px 30px var(--backshadow);
+}
+
+.forcast {
+    font-size: 13px;
 }
