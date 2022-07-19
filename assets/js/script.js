@@ -410,11 +410,3 @@ findOutBtn.addEventListener('click', function(event){
 })
 
 newYorkCity()
-
-//Code must:
-//Pull city from location box
-//Find the cities long/lat
-//Use lng/lat to pull from the weather API
-//Populate the site with its information
-//Put in a little weather icon in the forcast
-//Based on the weather, report if a coat is needed
