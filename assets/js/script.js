@@ -43,7 +43,6 @@ function newYorkCity() {
             return response.json();
             })
         .then(function (data) {
-            console.log(data)
 
             var mainTemp=document.getElementById("main-temp")
             var mainWind=document.getElementById("main-wind")
@@ -191,8 +190,6 @@ function buildFullCityUrl() {
 
     const fullCityUrl = cityUrl.concat(city)
 
-    console.log(fullCityUrl)
-
     findCityLocal(fullCityUrl)
 }
 
@@ -203,13 +200,10 @@ function findCityLocal(x) {
         return response.json();
         })
         .then(function (data) {
-            console.log(data)
 
             var lat = data[0].lon
 
             var lon = data[0].lat
-
-            console.log(lon)
 
             pullWeatherData(lon, lat)
     })
@@ -221,14 +215,11 @@ function pullWeatherData(x, y) {
     
     const weatherUrl = requestUrlOne.concat(x + requestUrlTwo + y + requestUrlThree)
 
-    console.log(weatherUrl)
-
     fetch(weatherUrl)
         .then(function (response) {
             return response.json();
             })
         .then(function (data) {
-            console.log(data)
 
             var mainTemp=document.getElementById("main-temp")
             var mainWind=document.getElementById("main-wind")
@@ -409,11 +400,8 @@ findOutBtn.addEventListener('click', function(event){
 
 recentlySearchedList.addEventListener('click', function(event){
     event.preventDefault()
-    console.log("butter butter peanut butter")
 
     var city = event.target.textContent
-
-    console.log(city)
 
     const fullCityUrl = cityUrl.concat(city)
 
