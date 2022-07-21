@@ -19,6 +19,8 @@ var descript = document.getElementById("main-current")
 
 var searchedCities = []
 
+var city
+
 
 var cardOne = document.getElementById("card-1-title")
 var cardTwo = document.getElementById("card-2-title")
@@ -216,10 +218,10 @@ function findCityLocal(x) {
 }
 
 function pullWeatherData(x, y) {
-
-    var city = document.getElementById("location").value
     
     const weatherUrl = requestUrlOne.concat(x + requestUrlTwo + y + requestUrlThree)
+
+    var city = JSON.parse(localStorage.getItem('City'))
 
     console.log(weatherUrl)
 
@@ -372,6 +374,7 @@ function pullWeatherData(x, y) {
         document.getElementById("location").value = ""
 }
 
+
 function addToSearchList() {
 
     var city = document.getElementById("location").value
@@ -393,12 +396,15 @@ function addToSearchList() {
     }
 
     buildFullCityUrl()
+    return city
 
 }
 
 findOutBtn.addEventListener('click', function(event){
     event.preventDefault()
     var city = document.getElementById("location").value
+
+    localStorage.setItem('City', JSON.stringify(city))
 
     if (city === ""){
         return false;
@@ -413,7 +419,7 @@ recentlySearchedList.addEventListener('click', function(event){
 
     var city = event.target.textContent
 
-    console.log(city)
+    localStorage.setItem('City', JSON.stringify(city))
 
     const fullCityUrl = cityUrl.concat(city)
 
