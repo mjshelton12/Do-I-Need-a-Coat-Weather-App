@@ -371,6 +371,8 @@ function addToSearchList() {
 
     searchedCities.unshift(city)
 
+    localStorage.setItem("recently searched cities array", JSON.stringify(searchedCities))
+
     let i = 0
 
     while (i < 5 && i < searchedCities.length){
