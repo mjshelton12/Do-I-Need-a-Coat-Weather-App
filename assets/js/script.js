@@ -372,23 +372,22 @@ function pullWeatherData(x, y) {
         document.getElementById("location").value = ""
 }
 
-
 function addToSearchList() {
+
     var city = document.getElementById("location").value
 
     recentlySearchedList.innerHTML = ""
 
     searchedCities.unshift(city)
 
-    console.log(typeof searchedCities)
-
-    console.log(searchedCities)
-
     let i = 0
 
-    while (i < 6){
+    while (i < 5 && i < searchedCities.length){
         var searchListItem = document.createElement("li")
-        searchListItem.textContent = searchedCities[i]
+        var searchListBtn = document.createElement("Button")
+        searchListBtn.textContent = searchedCities[i]
+        searchListBtn.setAttribute('city-name', searchedCities[i])
+        searchListItem.appendChild(searchListBtn)
         recentlySearchedList.appendChild(searchListItem)
         i++
     }
@@ -406,6 +405,19 @@ findOutBtn.addEventListener('click', function(event){
     } else {
         addToSearchList()
     }
+})
+
+recentlySearchedList.addEventListener('click', function(event){
+    event.preventDefault()
+    console.log("butter butter peanut butter")
+
+    var city = event.target.textContent
+
+    console.log(city)
+
+    const fullCityUrl = cityUrl.concat(city)
+
+    findCityLocal(fullCityUrl)
 })
 
 newYorkCity()

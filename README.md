@@ -18,12 +18,7 @@
 
 ## Summary
 
-* Built time slots, text areas, and buttons for each section of the calendar
-* Added date to the top of the page reflecting the actual date
-* Created a script that allows users to write and save events
-* Created a script that allowed the page to be refreshed and keep all saved data in the appropriate text area
-* Created a script that cleared the page if the user hit the trash button
-* Choose custom color scheme, fonts, and icons
+* Built search box, main box, 
 
 ## Author Links
 
