@@ -211,7 +211,7 @@ function findCityLocal(x) {
 
 function pullWeatherData(x, y) {
 
-    var city = document.getElementById("location").value
+    var city = JSON.parse(localStorage.getItem('city'))
     
     const weatherUrl = requestUrlOne.concat(x + requestUrlTwo + y + requestUrlThree)
 
@@ -391,6 +391,8 @@ findOutBtn.addEventListener('click', function(event){
     event.preventDefault()
     var city = document.getElementById("location").value
 
+    localStorage.setItem("city", JSON.stringify(city))
+
     if (city === ""){
         return false;
     } else {
@@ -402,6 +404,8 @@ recentlySearchedList.addEventListener('click', function(event){
     event.preventDefault()
 
     var city = event.target.textContent
+
+    localStorage.setItem("city", JSON.stringify(city))
 
     const fullCityUrl = cityUrl.concat(city)
 
